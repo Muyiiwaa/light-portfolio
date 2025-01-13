@@ -1,0 +1,78 @@
+/* style.css */
+
+/* Form Styles (Dark Theme) */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the form horizontally with some top/bottom margin */
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #333; /* Darker border color */
+    border-radius: 8px;
+    background-color: #222; /* Dark background color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow for depth */
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    padding: 12px; /* Increased padding */
+    border: 1px solid #555; /* Slightly lighter border for inputs */
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #333; /* Dark input background */
+    color: #eee; /* Light text color for inputs */
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #888; /* Muted color for placeholders */
+}
+
+form button {
+    background-color: #007bff; /* Keep a bright color for the button */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Adjust padding */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger font for the button */
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* General Styles */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px; /* Added margin to ensure some space from the edge */
+    background-color: #f4f4f4;
+}
+
+.stApp {
+    max-width: 1200px; /* Limit the width of the content area */
+    margin: 0 auto;  /* Center the main content area */
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Style for social media icons */
+a img {
+    margin-right: 20px; /* Adjust the spacing between icons as needed */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for the scaling */
+}
+
+a:hover img {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
