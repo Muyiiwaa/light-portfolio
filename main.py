@@ -32,7 +32,7 @@ PROJECTS = {
     },
     "NESTLE AUSTRALIA ANALYSIS DASHBOARD": {
         "description": "A dashboard that provides insights into the Nestle Australia business",
-        "link": "assets/tony_dash.png",
+        "link": "https://shorturl.at/zstqk",
     },
     "Project 3: Machine Learning Model": {
         "description": "A sophisticated machine learning model with high prediction accuracy...",
