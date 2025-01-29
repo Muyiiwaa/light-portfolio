@@ -8,7 +8,7 @@ DESCRIPTION = """
 Experienced Data Analytics expert with a passion for building efficient, state of the art data solutions.
 Specialized in data analysis, business intelligence, and database management.
 """
-EMAIL = "your.email@example.com"
+EMAIL =  "oreoluwaanthony52@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": {
         "link": "http://linkedin.com/in/iyiolaoreoluwa",
