@@ -11,15 +11,15 @@ Specialized in data analysis, business intelligence, and database management.
 EMAIL = "your.email@example.com"
 SOCIAL_MEDIA = {
     "LinkedIn": {
-        "link": "https://www.linkedin.com/in/yourprofile/",
+        "link": "http://linkedin.com/in/iyiolaoreoluwa",
         "logo": "https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg",
     },
     "GitHub": {
-        "link": "https://github.com/yourgithub/",
+        "link": "https://github.com/",
         "logo": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
     },
     "Twitter": {
-        "link": "https://twitter.com/yourtwitter/",
+        "link": "https://twitter.com/",
         "logo": "https://abs.twimg.com/favicons/twitter.3.ico",
     },
 }
@@ -30,9 +30,9 @@ PROJECTS = {
         "description": "A powerful web application built using Python, Streamlit and other awesome frameworks...",
         "link": "https://yourproject1.com",
     },
-    "Project 2: Data Analysis Tool": {
-        "description": "A robust data analysis tool using Python and related data science libraries...",
-        "link": "https://yourproject2.com",
+    "NESTLE AUSTRALIA ANALYSIS DASHBOARD": {
+        "description": "A dashboard that provides insights into the Nestle Australia business",
+        "link": "assets/tony_dash.png",
     },
     "Project 3: Machine Learning Model": {
         "description": "A sophisticated machine learning model with high prediction accuracy...",
@@ -52,8 +52,8 @@ st.title(NAME)
 st.write(DESCRIPTION)
 st.download_button(
     label=" 📄 Download My CV",
-    data="your_cv_content_here",  # Replace with your actual CV content or a path to it
-    file_name="your_cv_name.pdf",
+    data="assets/OREOLUWA_IYIOLA_Resume.pdf",  # Replace with your actual CV content or a path to it
+    file_name="OREOLUWA_IYIOLA_Resume.pdf",
     mime="application/octet-stream",  # use application/octet-stream if you are not using a pdf
 )
 
