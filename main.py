@@ -1,4 +1,5 @@
 import streamlit as st
+import webbrowser
 
 # --- GENERAL SETTINGS ---
 PAGE_TITLE = "My Portfolio"
@@ -32,7 +33,7 @@ PROJECTS = {
     },
     "NESTLE AUSTRALIA ANALYSIS DASHBOARD": {
         "description": "A dashboard that provides insights into the Nestle Australia business",
-        "link": "https://shorturl.at/zstqk",
+        "link": "https://shorturl.at/zstqk/",
     },
     "Project 3: Machine Learning Model": {
         "description": "A sophisticated machine learning model with high prediction accuracy...",
@@ -69,29 +70,28 @@ st.markdown("---")
 # --- PROJECTS SECTION ---
 st.header("Projects")
 
-project_items = list(PROJECTS.items())  # Convert to list
+project_items = list(PROJECTS.items())
 num_projects = len(project_items)
 
-if num_projects > 0:  # Ensure that we have at least one project
-    cols = st.columns(2)  # Use 2 columns
-    for i in range(0, num_projects, 2):  # Iterate through the list with a step of 2
+if num_projects > 0:
+    cols = st.columns(2)
+    for i in range(0, num_projects, 2):
         project1_name, project1_details = project_items[i]
-        with cols[0]:  # Put the first project in column 1
+        with cols[0]:
             with st.container(height=270, border=True):
                 st.subheader(project1_name, divider=True)
                 st.write(project1_details["description"])
-                if st.button(f"See Project", key=f"project1_{i}"):  # Unique key for each button
-                    st.markdown(f'<a href="{project1_details["link"]}" target="_blank"></a>', unsafe_allow_html=True)
+                if st.button(f"See Project", key=f"project1_{i}"):
+                    webbrowser.open_new_tab(project1_details["link"])
 
-        # Check if there is a second project before displaying it
         if i + 1 < num_projects:
             project2_name, project2_details = project_items[i + 1]
-            with cols[1]:  # Put the second project in column 2
+            with cols[1]:
                 with st.container(height=270, border=True):
                     st.subheader(project2_name, divider=True)
                     st.write(project2_details["description"])
-                    if st.button(f"See Project", key=f"project2_{i}"):  # Unique key for each button
-                        st.markdown(f'<a href="{project2_details["link"]}" target="_blank"></a>', unsafe_allow_html=True)
+                    if st.button(f"See Project", key=f"project2_{i}"):
+                        webbrowser.open_new_tab(project2_details["link"])
 
 st.divider()
 
